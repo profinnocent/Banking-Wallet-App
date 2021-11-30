@@ -1,0 +1,206 @@
+:root{
+--clroff: #F6F5F5 ;
+--clracent: #EE6F57;
+--clrmainlight: #1F3C88;
+--clrmaindark:#070D59;
+
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  font-size: 16px;
+  background-color: var(--clroff);
+  font-family: cursive, sans-serif;
+}
+
+.nav {
+  height: 10%;
+  width: 100%;
+
+}
+
+.login{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login h1{
+  margin: 0 auto;
+}
+
+.login p{
+  margin: 5px auto 15px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+form img{
+width: 4rem;
+
+}
+
+input{
+  height: 30px;
+  margin: 5px;
+  width: 100%;
+  /* border-radius: 2px; */
+}
+
+#lgsubmit{
+  background-color: var(--clrmainlight);
+  color: var(--clroff);
+}
+
+/* Profile page styling */
+.profile {
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  display: none;
+}
+
+.deco{
+  display: flex;
+  justify-content: space-between;
+}
+
+.pro-icons{
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.proh1{
+  margin-left: 15px;
+}
+
+.passport{
+  background-color: var(--clrmainlight);
+  width: 95%;
+  height: 150px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btns{
+  margin: 10px 0;
+}
+
+.btns button{
+  width: 180px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.pgbtntrs{
+  background-color: var(--clroff);
+  color: black;
+  font-weight: 600;
+}
+
+.pgbtnlgo{
+  background-color: var(--clracent);
+  color: var(--clroff);
+}
+
+/* Transaction Page styling */
+
+.transact {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: none;
+}
+
+.trsdisamt{
+  font-size: 1.6rem;
+  margin-left: 10px;
+  font-family: serif;
+  font-weight: 600;
+  background-color: var(--clrmainlight);
+  padding: 0 20px;
+  color: var(--clroff);
+  border-radius: 3px;
+}
+
+.bind{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.trsword{
+  font-size: 1rem;
+  margin-left: 25px;
+}
+
+.amtdiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 5px;
+  width: 100%;
+}
+
+#trsamtbox{
+width: 85%;
+margin: 5px auto;
+padding-left: 5px;
+}
+
+.trsbtns{
+  margin: 10px;
+}
+
+.trsbtns button{
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: var(--clrmainlight);
+  color: var(--clroff);
+  margin: 10px 10px;
+
+}
+
+.trsbtns .bakbtn{
+  background-color: var(--clracent);
+color: black;
+}
+
+
+
+.title{
+  border-bottom:1px solid black;
+}
+
+
+.footer {
+  height: 10%;
+  width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  font-size: 0.7rem;
+}
