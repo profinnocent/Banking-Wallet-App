@@ -1,5 +1,6 @@
 :root{
 --clroff: #F6F5F5 ;
+--clrblurwyt: #aca8a8 ;
 --clracent: #EE6F57;
 --clrmainlight: #1F3C88;
 --clrmaindark:#070D59;
@@ -100,6 +101,7 @@ input{
   margin: auto;
   padding: 10px;
   border-radius: 5px;
+  color: var(--clrblurwyt);
 }
 
 .btns{
@@ -107,7 +109,7 @@ input{
 }
 
 .btns button{
-  width: 180px;
+  width: 150px;
   height: 30px;
   border-radius: 5px;
   border: none;
@@ -117,6 +119,7 @@ input{
   background-color: var(--clroff);
   color: black;
   font-weight: 600;
+  margin-right: 10px;
 }
 
 .pgbtnlgo{
@@ -135,20 +138,23 @@ input{
 
 .trsdisamt{
   font-size: 1.6rem;
-  margin-left: 10px;
+  /* margin: 10px; */
   font-family: serif;
   font-weight: 600;
   background-color: var(--clrmainlight);
-  padding: 0 20px;
+  padding: 10px;
   color: var(--clroff);
   border-radius: 3px;
+  width: 85%;
+  margin-left: 25px;
 }
 
 .bind{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  margin: 10px 0;
+  margin: 10px auto;
 }
 
 .trsword{
@@ -176,24 +182,39 @@ max-width: 400px;
 }
 
 .trsbtns button{
-  width: 120px;
-  height: 30px;
+  width: 150px;
+  height: 35px;
   border-radius: 5px;
-  background-color: var(--clrmainlight);
+  /* background-color: var(--clrmainlight); */
   color: var(--clroff);
-  margin: 10px 10px;
+  margin: 10px 5px;
+}
 
+.depbtn{
+  background-color: green;
+}
+
+.witbtn{
+  background-color: rgb(252, 31, 31);
 }
 
 .trsbtns .bakbtn{
-  background-color: var(--clracent);
+  /* background-color: var(--clrmainlight); */
 color: black;
+border: 2px solid var(--clrmaindark);
 }
-
-
 
 .title{
   border-bottom:1px solid black;
+  display: flex;
+  padding: 0 5px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title span{
+  width: 25%;
+
 }
 
 
