@@ -109,7 +109,7 @@ depBtn.onclick = () => {
 //Add to transaction history
 updateTransHistory = () => {
   let d = new Date();
-  let day = d.getDate() + "-" + (d.getMonth()+1) + "-" + d.getFullYear();
+  let day = d.getDate() + "-" + (d.getMonth()+1) + "-" + d.getFullYear().toString().substring(2,4);;
     historyUl.innerHTML += `<div class="title"><span>${day}</span><Span>${transType}</Span><span>${trsAmtBox.value}</span> <span>${acctBalance}</span> </div>`;
 
 
