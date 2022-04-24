@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;1,300&family=Roboto:wght@100;300;400;500;700&display=swap');
+
 :root{
 --clroff: #F6F5F5 ;
---clrblurwyt: #aca8a8 ;
+--clrblurwyt: #e4e3e3 ;
 --clracent: #EE6F57;
 --clrmainlight: #1F3C88;
 --clrmaindark:#070D59;
@@ -19,7 +21,7 @@ body{
   margin: 0 auto;
   font-size: 16px;
   background-color: var(--clroff);
-  font-family: cursive, sans-serif;
+  font-family: poppins, cursive, sans-serif;
 }
 
 .nav {
@@ -82,6 +84,12 @@ input{
 .deco{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.disscreen{
+  display: flex;
+  margin-top: -10px;
 }
 
 .pro-icons{
@@ -125,6 +133,33 @@ input{
 .pgbtnlgo{
   background-color: var(--clracent);
   color: var(--clroff);
+}
+
+.dbicons{
+  margin: 30px 10px 20px;
+text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  color: var(--clroff);
+  padding: 5px 25px;
+}
+
+.dbicon{
+  background-color: var(--clrmainlight);
+  padding: 20px;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.dbicon:hover{
+  background-color: var(--clracent);
+  transform: scale(1.05);
+}
+
+.dbicon i{
+  font-size: 50px;
 }
 
 /* Transaction Page styling */
@@ -225,4 +260,14 @@ border: 2px solid var(--clrmaindark);
  justify-content: center;
  align-items: center;
   font-size: 0.7rem;
+}
+
+
+/*Media query ------------------------------------------------ */
+@media (max-width:576px){
+.dbicons{
+  grid-template-columns: 1fr 1fr;
+
+}
+
 }

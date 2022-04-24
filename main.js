@@ -119,6 +119,7 @@ updateTransHistory = () => {
 
 
 
+
 //Transaction page Back button handler
 bakBtn.onclick = () => {
   disPpage();
@@ -154,3 +155,9 @@ disTpage = () => {
   //Lood user data
   trsDisAmt.innerText = acctBalance.toLocaleString();
 };
+
+
+//Dashboard function icons
+document.querySelector('.dbicon1').onclick = () => {
+  disTpage();
+}
